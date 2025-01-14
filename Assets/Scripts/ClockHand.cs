@@ -15,8 +15,11 @@ public class ClockHand : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float minuteHand = hourLength * 12;
+
         Vector3 spin = transform.eulerAngles;
         spin.z -= hourLength;
         transform.eulerAngles = spin;
+
     }
 }
